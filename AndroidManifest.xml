@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zitec.workshopz"
+    android:versionCode="2"
+    android:versionName="3" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Pentru conumare API -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Pentru a ne asigura ca utilizatorul are acces la internet in momentul in care doreste sa descarce o revista -->
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.zitec.workshopz.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+               android:name="com.zitec.workshopz.user.activities.LoginActivity"
+               android:label="@string/app_name"
+               android:noHistory="true"
+               android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"></activity>
+    </application>
+
+</manifest>
