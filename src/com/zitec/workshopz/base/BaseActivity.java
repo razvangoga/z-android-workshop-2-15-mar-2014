@@ -8,6 +8,7 @@ import android.widget.Toast;
 import com.zitec.workshopz.base.storage.Error;
 import com.zitec.workshopz.user.activities.LoginActivity;
 import com.zitec.workshopz.user.entities.User;
+import com.zitec.workshopz.workshopz.storage.mappers.WorkshopzMapper;
 
 public class BaseActivity extends FragmentActivity {
 

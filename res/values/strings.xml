@@ -10,7 +10,11 @@
     <string name="empty_username_error">Username cannot be empty</string>
     <string name="empty_password_error">Password cannot be empty</string>
     <string name="network_error">Network error</string>
+        <string name="date_label">Date: </string>
+    <string name="speakers_label">Speakers: </string>
+    <string name="syncdb_service_name">workshopz syncronizer</string>
     <string name="bad_credentials">Bad credentials</string>
+    
     
     <string name="ws_base_url">http://workshopz.apache.dev54.zitec.ro</string>
     
