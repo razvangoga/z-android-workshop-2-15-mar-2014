@@ -60,6 +60,7 @@ public class WorkshopzMapper extends BaseStorageMapper {
 		try {
 			JSONArray spks = new JSONArray(speakers);
 			int spksNr = spks.length();
+			
 			for(int i = 0; i < spksNr; i++){
 				JSONObject jsonUsr = spks.getJSONObject(i);
 				HashMap<String, String> usr = new HashMap<String, String>();
@@ -70,12 +71,13 @@ public class WorkshopzMapper extends BaseStorageMapper {
 				usr.put("email", jsonUsr.getString("email"));
 				results.add(usr);
 			}
+			
 			return results;
 			
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
-		return null;
+		return new ArrayList<HashMap<String,String>>();
 	}
 	
 	public void save(BaseEntity item){

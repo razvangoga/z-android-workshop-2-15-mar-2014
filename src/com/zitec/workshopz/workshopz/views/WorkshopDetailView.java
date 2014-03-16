@@ -51,6 +51,10 @@ public class WorkshopDetailView extends BaseView {
 		LayoutInflater inflater = this.act.getLayoutInflater();
 		LinearLayout speakerLayout;
 		for(User speaker : this.item.getSpeakers()){
+			
+			if(speaker == null)
+				continue;
+				
 			speakerLayout = (LinearLayout)inflater.inflate(R.layout.workshop_speaker, null);
 			((TextView)speakerLayout.findViewById(R.id.speakerName)).setText(speaker.getName());
 			((TextView)speakerLayout.findViewById(R.id.speakerPosition)).setText(speaker.getPosition());

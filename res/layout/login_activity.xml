@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:imeOptions="actionNext"
-        android:hint="@string/username_label" />
+        android:hint="@string/username_label"
+        android:text="tibi@zitec.ro" />
 
     <EditText
         android:id="@+id/password"
@@ -21,7 +22,8 @@
         android:inputType="textPassword"
         android:imeOptions="actionGo"
         android:imeActionLabel="@string/login_submit_label"
-        android:hint="@string/password_label" />
+        android:hint="@string/password_label"
+        android:text="asdasd" />
     
     <Button 
         android:layout_width="wrap_content"
